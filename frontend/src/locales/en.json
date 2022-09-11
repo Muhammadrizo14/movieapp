@@ -1,0 +1,33 @@
+{
+  "admin": {
+    "title": "Admin panel",
+    "view-all-movies": "View all movies",
+    "home-page": "Home page"
+  },
+  "create": {
+    "title": "Add movie",
+    "add-form": {
+      "title": "Title",
+      "slogan": "Slogan",
+      "premiere": "Data of premiere",
+      "genre": "Genre",
+      "poster": "Poster",
+      "url": "Url to movie",
+      "add-btn": "Add",
+      "movieAdded": "Movie added successfully"
+    }
+  },
+  "view_movies": {
+    "title": "All movies",
+    "watchfilm": "Watch this movie",
+    "deleteMovie": "Are you want delete this movie?",
+    "editMovie": "Edit movie",
+    "editBtn": "Edit",
+    "aboutThisFilm": "About This Film",
+    "genre": "Genre",
+    "slogan": "Tagline",
+    "premiere": "premiere in the world"
+  },
+  "yes": "Yes",
+  "no": "No"
+}

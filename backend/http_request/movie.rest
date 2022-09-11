@@ -1,0 +1,46 @@
+
+####  Get all GRS
+GET http://localhost:3033/movie/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjQsImlhdCI6MTY2MjM5Mzg3OCwiZXhwIjoxNjYyNDI5ODc4fQ.Ul4eOHxsMM2emyGGosSLG_peJRuAGhjyila6yGG53Gg
+
+
+####  Get GRS by Id
+GET http://localhost:3033/movie/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhbnZhcjAxNDIiLCJjcmVhdGVkQXQiOiIyMDIyLTAzLTI0VDEyOjQxOjEwLjU1NloiLCJ1cGRhdGVkQXQiOiIyMDIyLTAzLTI0VDEyOjQxOjEwLjU1NloiLCJkZWxldGVkQXQiOm51bGwsInJvbGVJZCI6MSwiaWF0IjoxNjQ4MTg3MDIwLCJleHAiOjE2NDgyMjMwMjB9.Zs20B5eCcWYJRQgjksa0QISPDSQePFnsgeukxByAUVU
+
+####  Creating GRS
+POST http://localhost:3033/movie/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhbnZhcjAxNDIiLCJjcmVhdGVkQXQiOiIyMDIyLTAzLTI1VDEwOjE2OjQ1LjIxN1oiLCJ1cGRhdGVkQXQiOiIyMDIyLTAzLTI1VDEwOjE2OjQ1LjIxN1oiLCJkZWxldGVkQXQiOm51bGwsInJvbGVJZCI6MSwiaWF0IjoxNjQ5Nzc1NTM4LCJleHAiOjE2NDk4MTE1Mzh9.POZhpJAVewklkUuHYoezCOEiRHf79dVEedCEfIrwn7I
+
+{
+  "title": "Тор: Любовь и гром",
+  "genre": "фантастика",
+  "premuere": "23 июня 2022",
+  "slogan": "Not every god has a plan",
+  "image": "https://avatars.mds.yandex.net/get-kinopoisk-image/6201401/edfe3234-6ede-4edf-a35d-5ec071ef52c8/1920x",
+  "url": "https://www.kinopoisk.ru/film/1282688/"
+}
+
+####  UPDATE GRS
+PATCH http://localhost:3033/movie/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhbnZhcjAxNDIiLCJjcmVhdGVkQXQiOiIyMDIyLTAzLTI0VDEyOjQxOjEwLjU1NloiLCJ1cGRhdGVkQXQiOiIyMDIyLTAzLTI0VDEyOjQxOjEwLjU1NloiLCJkZWxldGVkQXQiOm51bGwsInJvbGVJZCI6MSwiaWF0IjoxNjQ4MTg3MDIwLCJleHAiOjE2NDgyMjMwMjB9.Zs20B5eCcWYJRQgjksa0QISPDSQePFnsgeukxByAUVU
+
+{
+  "name": "i5-10400f-updated"
+}
+
+#### DELETE MANY
+POST http://localhost:3033/movie/delete-many
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhbnZhcjAxNDIiLCJjcmVhdGVkQXQiOiIyMDIyLTAzLTI0VDEyOjQxOjEwLjU1NloiLCJ1cGRhdGVkQXQiOiIyMDIyLTAzLTI0VDEyOjQxOjEwLjU1NloiLCJkZWxldGVkQXQiOm51bGwsInJvbGVJZCI6MSwiaWF0IjoxNjQ4MTg3MDIwLCJleHAiOjE2NDgyMjMwMjB9.Zs20B5eCcWYJRQgjksa0QISPDSQePFnsgeukxByAUVU
+
+{
+  "ids": [2, 6]
+}
+
+
+####  Delete
+DELETE http://localhost:3033/movie/14
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhbnZhcjAxNDIiLCJjcmVhdGVkQXQiOiIyMDIyLTAzLTIyVDE2OjE4OjI1LjM1OFoiLCJ1cGRhdGVkQXQiOiIyMDIyLTAzLTIyVDE2OjE4OjI1LjM1OVoiLCJkZWxldGVkQXQiOm51bGwsInJvbGVJZCI6MSwiaWF0IjoxNjQ4MDE0MTE2LCJleHAiOjE2NDgwNTAxMTZ9.wukV2-4R2z2hlPHqLY7Qs6BTDQ-ECwychTE5i2I0IO0

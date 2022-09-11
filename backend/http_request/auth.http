@@ -1,0 +1,13 @@
+### Login
+POST http://localhost:3033/auth/login
+Content-Type: application/json
+
+{
+  "name": "anvar0142",
+  "password": "0142"
+}
+
+
+#### Profile
+GET http://localhost:3033/auth/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjQsImlhdCI6MTY2MjM5Mzg3OCwiZXhwIjoxNjYyNDI5ODc4fQ.Ul4eOHxsMM2emyGGosSLG_peJRuAGhjyila6yGG53Gg
